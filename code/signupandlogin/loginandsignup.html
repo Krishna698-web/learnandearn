@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login and signup</title>
+    <link rel="stylesheet" href="lands.css">
+</head>
+
+<body>
+    <div class="form_container">
+        <div class="img">
+            <img src="/Images/loginandsignup/img1.jpg" alt="" id="img1">
+            <img src="/Images/loginandsignup/img2.jpg" alt="" id="img2">
+        </div>
+        <div class="forms">
+            <form action="" class="signup" id="signup">
+                <h1>SIGNUP</h1>
+                <div class="field">
+                    <input type="text" id="name" placeholder="Username">
+                    <label for="name">Username</label>
+                </div>
+                <div class="field">
+                    <input type="email" id="Sgemail" placeholder="email">
+                    <label for="Sgemail">Email</label>
+                </div>
+                <div class="field">
+                    <input type="password" id="Sgpassword" placeholder="password">
+                    <a href="#" id="view" onclick="show();"><img src="/Images/loginandsignup/view.png" alt=""></a>
+                    <label for="Sgpassword">Password</label>
+                </div>
+                <button class="button signup_btn" id="signUp" onclick="" value="Sign up">Signup</button>
+                <span class="orline">
+                    <p>Or</p>
+                    <hr>
+                </span>
+                <span class="link">Already have account? <a href="#" id="login_link" onclick="left_right();">Login</a>
+                </span>
+            </form>
+            <form action="" class="login" id="login">
+                <h1>LOGIN</h1>
+                <div class="field">
+                    <input type="email" id="Lgemail" placeholder="email">
+                    <label for="email">Email</label>
+                </div>
+                <div class="field">
+                    <input type="password" id="Lgpassword" placeholder="password">
+                    <a href="#" id="view" onclick="show();"><img src="/Images/loginandsignup/view.png" alt=""></a>
+                    <label for="pswd">Password</label>
+                </div>
+                <button class="button login_btn" id="logIn" onclick="" value="">Login</button>
+                <span class="orline">
+                    <p>Or</p>
+                    <hr>
+                </span>
+                <span class="link">Don't have account? <a href="#" id="signup_link" onclick="right_left();">Create
+                        one</a> </span>
+            </form>
+        </div>
+    </div>
+
+    <div class="buttons edits">
+        <a href="../landing page/index.html">Go Back to Home..</a>
+    </div>
+</body>
+
+<script src=""></script>
+<script src="lsscript.js"></script>
+<script type="module" src="storage.js">
+    // Import the functions you need from the SDKs you need
+</script>
+<!-- <script src=""></script> -->
+</html>

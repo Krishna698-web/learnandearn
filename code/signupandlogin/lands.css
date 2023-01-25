@@ -1,0 +1,207 @@
+/* light green: 06d6a0
+light green fade: 98fb98
+mix green: 00a86b
+dark green: 30694b
+very dark green: 043927 */
+
+@import url('../aboutUs/aboutus.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: whitesmoke;
+}
+
+.form_container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 3rem;
+    box-shadow: 0 2rem 5rem -3rem gray;
+    background: white;
+}
+
+.img {
+    height: 40rem;
+    width: 40rem;
+    position: relative;
+}
+
+.img img {
+    height: 40rem;
+    transition: 1s;
+}
+
+#img2 {
+    transform: translate(-32rem, 5rem);
+}
+
+form {
+    font-family: 'Space Mono', monospace;
+    padding: 2rem;
+    border-radius: 3px;
+    width: 32rem;
+    background-color: #06d6a0;
+    transition: .5s;
+}
+
+form h1 {
+    text-align: center;
+    margin: 2rem;
+    margin-bottom: 3rem;
+    color: #043927;
+}
+
+.field {
+    position: relative;
+    margin: 3rem 1rem;
+}
+
+.field input {
+    border: none;
+    border-bottom: 2px solid #043927;
+    padding: 1rem;
+    outline: none;
+    width: 100%;
+    font-weight: bold;
+    background: transparent;
+    color: #043927;
+}
+
+::placeholder {
+    color: transparent;
+}
+
+.field label {
+    position: absolute;
+    left: 1rem;
+    top: .8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    pointer-events: none;
+    opacity: .5;
+    transition: .3s;
+    color: #043927;
+}
+
+#view {
+    position: absolute;
+    top: 1rem;
+    right: 5px;
+    opacity: .5;
+}
+
+.button {
+    display: block;
+    border: none;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 5rem;
+    border-radius: 3px;
+    border: 2px solid transparent;
+    color: white;
+    background: #043927;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.orline {
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.orline p {
+    font-size: 1.5rem;
+    color: white;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    padding: 0 1rem;
+    background: #06d6a0;
+}
+
+.orline hr {
+    height: 2px;
+    background: whitesmoke;
+    border: none;
+    transform: translateY(-1rem);
+}
+
+.link {
+    display: block;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #043927;
+}
+
+.link a {
+    text-decoration: none;
+    color: white;
+}
+
+.field input:focus~label,
+.field input:not(:placeholder-shown)~label {
+    opacity: 1;
+    font-size: 1.2rem;
+    top: -1rem;
+}
+
+.signup {
+    position: relative;
+    left: 0rem;
+}
+
+.login {
+    padding: 5.2rem;
+    position: absolute;
+    top: 3.5rem;
+    right: -35rem;
+}
+
+.button:hover {
+    border: 2px solid #043927;
+    background: #06d6a0;
+    color: #043927;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+
+.edits{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 375px) and (max-width: 750px) {
+    .form_container {
+        flex-wrap: wrap;
+    }
+
+    .img {
+        display: none;
+    }
+}

@@ -1,0 +1,136 @@
+@import url('../landing\ page/styling/style.css');
+@import url('../landing\ page/styling/header.css');
+@import url('../landing\ page/styling/hovering.css');
+
+body {
+    color: #023047;
+    background: whitesmoke;
+}
+
+.course-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    display: flex;
+    justify-content: centers;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    text-align: center;
+    margin: 5rem 0;
+}
+
+.heading h1 {
+    font-size: 4rem;
+}
+
+.heading h2 {
+    letter-spacing: 3px;
+}
+
+.heading h1 span {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.course {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 3px;
+    transition: .5s;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 .5rem 1rem -1rem gray;
+    background-color: white;
+}
+
+.course h2 {
+    margin: 1rem;
+}
+
+.course img {
+    height: 25rem;
+}
+
+.course:hover {
+    box-shadow: 0 .5rem 2rem -1rem gray;
+    transform: scale(1.03);
+}
+
+
+/* For the iframe */
+#tutorial {
+    padding: 0 5rem;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    box-shadow: 0 1rem 3rem -1rem gray;
+    background: white;
+    display: none;
+}
+
+#heading {
+    position: absolute;
+    top: 2rem;
+    /* left: 2rem; */
+}
+
+iframe {
+    width: 120.8rem;
+    height: 72rem;
+    border-radius: 3px;
+}
+
+#close {
+    border: none;
+    background: none;
+    float: right;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    padding: 0;
+    cursor: pointer;
+    color: #023047;
+    opacity: .5;
+    font-weight: bold;
+    transform: translate(2.5rem, 0.2rem);
+}
+
+#login_signup {
+    margin: 1rem 0;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+}
+
+#close:hover{
+    opacity: 1;
+}
+
+
+
+@media (min-width: 740px) and (max-width: 1480px) {
+    .course-container {
+        top: 100%;
+    }   
+}
+
+
+@media (min-width: 360px) and (max-width: 740px) {
+    .course-container {
+        top: 190%;
+    }   
+}

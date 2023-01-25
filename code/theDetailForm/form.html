@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>My Form</title>
+</head>
+
+<body>
+    <div class="alert">Submited successfully!</div>
+    <nav class="navbar">
+        <div class="logo left"><img src="/Images/logo/learn.png" alt=""></div>
+        <div class="right">
+            <ul class="menu inline">
+                <li>
+                    <a href="../landing page/index.html">Home</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="../theCourses/course.html">Courses</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="../aboutUs/aboutus.html">AbouUs</a>
+                    <span class="underline"></span>
+                </li>
+                <li>
+                    <a href="#">Profile</a>
+                    <span class="underline"></span>
+                </li>
+            </ul>
+            <a class="btn login" href="../signupandlogin/loginandsignup.html" id="login_signup">Login / SignUp</a>
+        </div>
+    </nav>
+    <form action="" id="detailForm">
+        <h1>My Details</h1>
+        <div class="info">
+            <!-- <div class="imgsec">
+                <div id="display-image"></div>
+                <input type="file" id="imageFile" accept="image/jpeg, image/png, image/jpg">
+            </div> -->
+            <div class="inputs">
+                <div class="field">
+                    <input type="text" id="firstName" placeholder="firstName">
+                    <label for="firstName">First Name</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" id="lastName" placeholder="lastName">
+                    <label for="firstName">Last Name</label>
+                </div>
+
+                <div class="choose">
+                    <h3>Gender</h3>
+                    <div class="radio">
+                        <input type="radio" name="gender" id="female" value="Female"><label for="female">Female</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+                    </div>
+                    <!-- <button id="btn">Show</button> -->
+                </div>
+
+                <div class="field">
+                    <input type="email" id="email" placeholder="email">
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" id="phone" placeholder="phone">
+                    <label for="phone">Phone</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="skills">
+            <h2>Select skills</h2>
+            <div class="checkbox-field">
+                <input type="checkbox" name="skill" id="communication" value="Communication"><label for="communication">Communication</label>
+            </div>
+            <div class="checkbox-field">
+               <input type="checkbox" name="skill" id="html" value="HTML"><label for="html">HTML</label>
+            </div>
+            <div class="checkbox-field">
+                <input type="checkbox" name="skill" id="css" value="CSS"><label for="css">CSS</label>
+            </div>
+            <div class="checkbox-field">
+                <input type="checkbox" name="skill" id="seo" value="SEO"><label for="seo">SEO</label>
+            </div>
+            <div class="checkbox-field">
+                <input type="checkbox" name="skill" id="js" value="Javascript"><label for="js">Javascript</label>
+            </div>
+            <div class="checkbox-field">
+                <input type="checkbox" name="skill" id="draw" value="Drawing"><label for="draw">Drawing</label>
+            </div>
+            <div class="checkbox-field">
+                <input type="checkbox" name="skill" id="ms" value="MS OFFICE"><label for="ms">MS OFFICE</label>
+            </div>
+        </div>
+
+        <div class="field text-field">
+            <h2>Some Message</h2>
+            <textarea name="" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <button class="button submit_btn" id="submit" onclick="" value="Submit">Submit</button>
+    </form>
+</body>
+<script>
+    // const image_input = document.querySelector("#imageFile");
+
+    // image_input.addEventListener("change", function () {
+    //     const reader = new FileReader();
+    //     reader.addEventListener("load", () => {
+    //         const uploaded_image = reader.result;
+    //         document.querySelector("#display-image").style.backgroundImage = `url(${uploaded_image})`;
+    //     });
+    //     reader.readAsDataURL(this.files[0]);
+    // });
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="form.js"></script>
+
+<!-- <script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.9.1/firebase-storage.js"></script> -->
+
+</html>

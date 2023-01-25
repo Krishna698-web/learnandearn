@@ -1,0 +1,17 @@
+.menu li a:hover ~ .underline{
+    transform: translateY(0);
+    opacity: 1;
+    width: 3rem;
+}
+
+.btn:hover {
+    border: 2px solid #023047;
+    background-color: white;
+    color: #023047;
+}
+
+.buttons a:hover{
+    background: #ef233c;
+    border: 2px solid transparent;
+    color: white;
+}

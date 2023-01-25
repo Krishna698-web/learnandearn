@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background: white;
+}
+
+.logo img {
+    height: 4rem;
+    margin: 1rem;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+#myNav{
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.5rem;
+    padding: 2rem;
+    font-weight: bold;
+    color: #023047;
+}
+
+.menu .underline {
+    width: 1rem;
+    display: block;
+    height: 3px;
+    border-radius: 5px;
+    transform: translateY(1rem);
+    margin: 0 auto;
+    opacity: 0;
+    background: #023047;
+    transition: .3s;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    font-family: 'Space Mono', monospace;
+    border: 2px solid transparent;
+    background: #023047;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10rem;
+    /* padding: 5rem; */
+    /* background: whitesmoke; */
+    font-family: sans-serif;
+}
+
+.content {
+    padding: 10rem 15rem;
+}
+
+.heading h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    color: #023047;
+}
+
+.heading span {
+    display: block;
+    height: 1rem;
+    width: 35%;
+    opacity: .5;
+    position: relative;
+    top: -1.2rem;
+    z-index: -1;
+    background-color: #ffb703;
+}
+
+.content p {
+    font-size: 5rem;
+    font-weight: bold;
+    width: 60rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #023047;
+    letter-spacing: -1px;
+    margin: 2rem 0;
+}
+
+.buttons a {
+    border: none;
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #ef233c;
+    color: #023047;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+/* For tablets screens */
+@media screen and (min-width: 740px) and (max-width: 1080px) {
+    .container {
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+        justify-content: center;
+    }
+    .content {
+        margin-top: -2rem;
+        padding: 3rem;
+        text-align: center;
+    }
+
+    .heading span {
+        margin: 0 auto;
+    }
+
+    .right{
+        margin-right: 0;
+    }
+}
+
+
+/* For Mobile screens */
+@media screen and (min-width: 360px) and (max-width: 740px) {
+    .navbar .menu{
+        flex-direction: column;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        padding: 2rem 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        margin-top: -1rem;
+        padding: 3rem 0;
+        text-align: center;
+    }
+    
+    .content p{
+        width: 42rem;
+        text-align: center;
+        font-size: 3rem;
+    }
+    
+    .heading span {
+        margin: 0 auto;
+    }
+
+
+    .gif img{
+        height: 33.5rem;
+    }
+
+
+    .right{
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        position: absolute;
+        top: 5rem;
+        right: -20rem;
+        width: 40%;
+        background: white;
+        box-shadow: 0 1rem 5rem -2rem gray;
+        border-radius: 3px;
+        padding: 2rem;
+        transition: .5s;
+    }
+
+    .menu {
+        display: flex;
+        text-align: center;
+    }
+
+    .menu li{
+        padding: 1rem;
+    }
+
+    label#lines{
+        cursor: pointer;
+        margin: 1rem;
+    }
+
+    label#lines span{
+        height: 5px;
+        width: 3rem;
+        background-color: #023047;
+        display: block;
+        margin: 5px;
+    } 
+
+    #myNav:checked ~ .right{
+        /* top: 5rem; */
+        right: 0;
+    }
+}

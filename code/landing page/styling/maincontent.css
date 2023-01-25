@@ -1,0 +1,126 @@
+main .mid_section {
+    width: 100%;
+    position: relative;
+    top: 5rem;
+    margin: 0 auto;
+    padding: 10rem 40rem;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mid_section .heading h1 {
+    font-size: 4rem;
+}
+
+.mid_section .heading span {
+    margin: 0 auto;
+    width: 10%;
+}
+
+.mid_section p {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #023047;
+}
+
+.mid_section p span {
+    color: #d8315b;
+}
+
+
+/* Exploring things */
+.main_content {
+    margin-top: 10rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.main_heading {
+    text-align: center;
+}
+
+div.main_heading h1 {
+    font-size: 4rem;
+}
+
+.main_content .main_heading span {
+    width: 25rem;
+    margin: 0 auto;
+}
+
+.section-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-2 .cont {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.section-2 .inner-content {
+    margin: 5rem;
+}
+
+.section-2 .cont .heading span {
+    width: 5rem;
+}
+
+.section-2 p {
+    font-size: 2rem;
+    margin: 3rem 0;
+    width: 35rem;
+    font-weight: 200;
+}
+
+.section-2 img {
+    height: 40rem;
+}
+
+
+
+
+@media screen and (min-width: 740px) and (max-width: 1080px) {
+    main .mid_section {
+        padding: 10rem 5rem;
+    }
+
+    .main_content {
+        margin-top: 5rem;
+    }
+
+    .section-2 .inner-content {
+        margin: 1rem;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+    .mid_section .heading span {
+        width: 40%;
+    }
+    main .mid_section {
+        top: 10rem;
+        padding: 10rem 2rem;
+    }
+
+    .section-2 img {
+        height: 38rem;
+    }
+    .section-2 .cont {
+        flex-direction: column;
+    }
+    .section-2 .cont-2{
+        flex-direction: column-reverse;
+    }
+
+    .section-2 .cont .heading span {
+        margin: 0 1rem;
+    }
+
+    
+
+}

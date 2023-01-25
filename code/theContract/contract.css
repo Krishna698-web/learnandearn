@@ -1,0 +1,67 @@
+@import url('../profile/profile.css');
+
+
+body {
+    background: whitesmoke;
+}
+
+.menu li a {
+    font-weight: bold;
+}
+
+.main-container {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.heading h1 span {
+    width: 10%;
+    margin: 0 auto;
+}
+
+#contracts-container {
+    width: 100rem;
+}
+
+.contract-card {
+    border-radius: 3px;
+    padding: 2rem;
+    margin: 1.5rem 0;
+    cursor: pointer;
+    background: white;
+    transition: .3s;
+}
+
+.contract-heading {
+    font-size: 2rem;
+    color: darkslategray;
+}
+
+.main-heading {
+    font-size: 1.7rem;
+}
+
+#skills p {
+    font-size: 1.3rem;
+}
+
+p.content {
+    padding: 2rem 0;
+}
+
+div.buttons {
+    margin: -2rem 0;
+    float: right;
+}
+
+
+.contract-card:hover {
+    box-shadow: 0 2rem 2rem -3rem black;
+}

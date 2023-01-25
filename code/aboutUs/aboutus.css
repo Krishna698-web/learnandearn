@@ -1,0 +1,94 @@
+@import url('../landing\ page/styling/style.css');
+
+
+body {
+    color: #023047;
+    text-align: center;
+}
+
+.logo img{
+    margin: 1rem -3rem;
+    /* height: 5rem; */
+}
+
+.overall {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 5rem;
+    font-family: 'Lobster Two', cursive;
+}
+
+.aboutlearnandearn {
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+    padding: 2rem 0;
+}
+
+.aboutus-container {
+    margin: 0 auto;
+}
+
+h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 4rem;
+}
+
+.image-sec img {
+    height: 30rem;
+    border-radius: 50%;
+    box-shadow: 0 2rem 3rem -3rem black;
+}
+
+.aboutme{
+    display: inline;
+}
+
+.edits{
+    margin: 4rem;
+}
+.edits a{
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 10px 2rem;
+    border-radius: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+    .logo img{
+        height: 5rem;
+    }
+    .overall {
+        /* top: 60%; */
+    }
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .aboutlearnandearn{
+        font-size: 2rem;
+        padding: 1rem 0;
+    }
+    .image-sec img{
+        height: 20rem;
+    }
+
+    h2{
+        font-size: 3rem;
+    }
+
+    .edits a{
+        font-size: 1rem;
+        margin: 0;
+        letter-spacing: 0;
+        font-weight: bold;
+    }
+}
